@@ -1,0 +1,95 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+$primary-text-color: #213547;
+$primary-bg-color: #f0f0f0;
+$primary-font-family: "Rubik", sans-serif;
+
+body {
+  background: $primary-bg-color;
+  color: $primary-text-color;
+  font-family: $primary-font-family;
+}
+
+input,
+textarea,
+button {
+  font-family: $primary-font-family;
+}
+
+.App {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 5px;
+}
+
+/* Header Styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid lightgray;
+}
+
+.navbrand {
+  display: flex;
+  align-items: flex-start;
+
+  &__title {
+    font-size: 32px;
+  }
+}
+
+.github-link {
+  text-decoration: underline;
+  font-size: 24px;
+}
+
+// Wrapper Styles
+.wrapper {
+  display: flex;
+  margin-top: 40px;
+  height: calc(100vh - 140px);
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.editor,
+.previewer {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+
+  img {
+    max-width: 100%;
+    display: block;
+  }
+}
+
+.previewer {
+  overflow: auto;
+}
+
+.panel__title {
+  text-align: center;
+  font-size: 22px;
+  margin: 10px 0;
+}
+
+.panel__textarea {
+  height: calc(100% - 45px);
+  textarea {
+    border: none;
+    height: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+  }
+}
